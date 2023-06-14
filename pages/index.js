@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Layout } from '@/components/Layout'
 
 import ProductCard from '@/components/ProductCard'
-const axios = require('axios');
+
 
 const inter = Roboto({ subsets: ['latin'], weight:["500"] })
 
