@@ -1,11 +1,11 @@
-import Image from 'next/image'
+
 import { Roboto } from 'next/font/google'
 
 import axios from 'axios'
 import { Layout } from '@/components/Layout'
-import Link from 'next/link'
-import ProductCard from '@/components/ProductCard'
 
+import ProductCard from '@/components/ProductCard'
+const axios = require('axios');
 
 const inter = Roboto({ subsets: ['latin'], weight:["500"] })
 
@@ -19,7 +19,7 @@ export default function Home({products}) {
 <div className='px-4 grid md:grid-cols-2  lg:grid-cols-3 gap-8'>
           {products.map(it=>(
             <ProductCard key={it.id} it={it}/>
-            ))}</div>): <div><h1 className='text-center font-bold text-2xl mt-10 italic'>"no products to be listed"</h1></div>}
+            ))}</div>): <div><h1 className='text-center font-bold text-2xl mt-10 italic'>no products to be listed</h1></div>}
     </Layout>
 
   )
